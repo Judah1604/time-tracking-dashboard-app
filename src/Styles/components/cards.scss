@@ -1,0 +1,98 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    .card {
+        border-radius: 15px;
+        position: relative;
+
+        .top {
+            position: absolute;
+            width: 100%;
+            z-index: -1;
+            border-radius: inherit;
+            text-align: right;
+            overflow: hidden;
+
+            img {
+                position: relative;
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+
+        .details {
+            padding: 25px;
+            background-color: hsl(235, 46%, 20%);
+            margin-top: 40px;
+            border-radius: inherit;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+                filter: brightness(1.5);
+            }
+
+            .name {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            h1 {
+                font-weight: 300;
+                font-size: 3em;
+                line-height: 1.5;
+            }
+
+            &>p {
+                opacity: 0.5;
+                font-size: 0.9em;
+            }
+
+        }
+    }
+
+    .work {
+
+        .top {
+            background-color: hsl(15, 100%, 70%);
+        }
+    }
+
+    .play {
+        .top {
+            background-color: hsl(195, 74%, 62%);
+        }
+
+    }
+
+    .study {
+        .top {
+            background-color: hsl(348, 100%, 68%);
+        }
+
+    }
+
+    .exercise {
+        .top {
+            background-color: hsl(145, 58%, 55%);
+        }
+
+    }
+
+    .social {
+        .top {
+            background-color: hsl(264, 64%, 52%);
+        }
+
+    }
+
+    .self-care {
+        .top {
+            background-color: hsl(43, 84%, 65%);
+        }
+
+    }
+}

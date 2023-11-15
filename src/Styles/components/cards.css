@@ -1,0 +1,65 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.cards .card {
+  border-radius: 15px;
+  position: relative;
+}
+.cards .card .top {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  border-radius: inherit;
+  text-align: right;
+  overflow: hidden;
+}
+.cards .card .top img {
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+}
+.cards .card .details {
+  padding: 25px;
+  background-color: hsl(235, 46%, 20%);
+  margin-top: 40px;
+  border-radius: inherit;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.cards .card .details:hover {
+  filter: brightness(1.5);
+}
+.cards .card .details .name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards .card .details h1 {
+  font-weight: 300;
+  font-size: 3em;
+  line-height: 1.5;
+}
+.cards .card .details > p {
+  opacity: 0.5;
+  font-size: 0.9em;
+}
+.cards .work .top {
+  background-color: hsl(15, 100%, 70%);
+}
+.cards .play .top {
+  background-color: hsl(195, 74%, 62%);
+}
+.cards .study .top {
+  background-color: hsl(348, 100%, 68%);
+}
+.cards .exercise .top {
+  background-color: hsl(145, 58%, 55%);
+}
+.cards .social .top {
+  background-color: hsl(264, 64%, 52%);
+}
+.cards .self-care .top {
+  background-color: hsl(43, 84%, 65%);
+}/*# sourceMappingURL=cards.css.map */

@@ -1,0 +1,51 @@
+$border-radius: 15px;
+
+.personal {
+    background-color: hsl(235, 46%, 20%);
+    width: 100%;
+    border-radius: $border-radius;
+
+    .person {
+        padding: 25px;
+        background-color: hsl(246, 80%, 60%);
+        border-radius: inherit;
+
+        img {
+            width: 60px;
+            height: 60px;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            opacity: 0.7;
+            font-size: 0.8em;
+        }
+
+        h1 {
+            font-weight: 300;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+    }
+
+    .time-toggle {
+        padding: 25px;
+        font-weight: 300;
+        color: hsl(235, 45%, 61%);
+
+        & > * {
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                color: white;
+            }
+        }
+
+        .active {
+            color: white;
+        }
+    }
+}
