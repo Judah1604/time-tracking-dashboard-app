@@ -32,6 +32,7 @@
 .personal .time-toggle > * {
   cursor: pointer;
   transition: 0.3s;
+  text-transform: capitalize;
 }
 .personal .time-toggle > *:hover {
   color: white;

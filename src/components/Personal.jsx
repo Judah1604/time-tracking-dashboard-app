@@ -1,6 +1,9 @@
 import "../Styles/components/personal.css";
+import { motion } from "framer-motion";
 
 function Personal({ timeframes, setTimeframes }) {
+    const toggleNames = ["daily", "weekly", "monthly"];
+
     return (
         <div className="personal">
             <div className="person">
@@ -11,30 +14,21 @@ function Personal({ timeframes, setTimeframes }) {
                 </div>
             </div>
             <div className="time-toggle">
-                <div
-                    className={
-                        timeframes === "daily" ? "toggle active" : "toggle"
-                    }
-                    onClick={() => setTimeframes("daily")}
-                >
-                    Daily
-                </div>
-                <div
-                    className={
-                        timeframes === "weekly" ? "toggle active" : "toggle"
-                    }
-                    onClick={() => setTimeframes("weekly")}
-                >
-                    Weekly
-                </div>
-                <div
-                    className={
-                        timeframes === "monthly" ? "toggle active" : "toggle"
-                    }
-                    onClick={() => setTimeframes("monthly")}
-                >
-                    Monthly
-                </div>
+                {toggleNames.map((name, index) => (
+                    <motion.div
+                        className={
+                            timeframes === name ? "toggle active" : "toggle"
+                        }
+                        onClick={() => setTimeframes(name)}
+                        initial={{y: 25, opacity: 0}}
+                        whileInView={{y: 0, opacity: 1}}
+                        transition={{delay: index * 0.1}}
+                        viewport={{once: true}}
+                        key={index}
+                    >
+                        {name}
+                    </motion.div>
+                ))}
             </div>
         </div>
     );
