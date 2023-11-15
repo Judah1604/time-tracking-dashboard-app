@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-time-tracking-dashboard-with-react-sass-ob8bMJDmuq](https://www.frontendmentor.io/solutions/responsive-time-tracking-dashboard-with-react-sass-ob8bMJDmuq)
 - Live Site URL: [https://judah1604.github.io/time-tracking-dashboard-app/](https://judah1604.github.io/time-tracking-dashboard-app/)
 
 ## My process
