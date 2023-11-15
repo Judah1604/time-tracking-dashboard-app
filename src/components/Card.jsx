@@ -1,16 +1,21 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 function Card({ period, timeframes }) {
     const optimizedTitle = period.title.toLowerCase().split(" ").join("-");
 
     return (
         <div className={"card " + optimizedTitle}>
-            <div className="top">
+            <motion.div
+                className="top"
+                initial={{ y: 35 }}
+                whileInView={{ y: 0 }}
+                viewport={{ once: true }}
+            >
                 <img
                     src={"/images/icon-" + optimizedTitle + ".svg"}
                     alt={period.title}
                 />
-            </div>
+            </motion.div>
             <div className="details">
                 <div className="name">
                     <p>{period.title}</p>

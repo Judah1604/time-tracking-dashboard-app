@@ -5,8 +5,10 @@ function Personal({ timeframes, setTimeframes }) {
         <div className="personal">
             <div className="person">
                 <img src="/images/image-jeremy.png" alt="Jeremy Robson" />
-                <p>Report for</p>
-                <h1>Jeremy Robson</h1>
+                <div className="text">
+                    <p>Report for</p>
+                    <h1>Jeremy Robson</h1>
+                </div>
             </div>
             <div className="time-toggle">
                 <div

@@ -28,6 +28,16 @@ body {
     height: unset;
     padding: 20px;
   }
+  .personal .person {
+    display: flex;
+    gap: 20px;
+  }
+  .personal .person img, .personal .person h1 {
+    margin: 0 !important;
+  }
+  .personal .person h1 {
+    font-size: 1.5em;
+  }
   .personal .time-toggle {
     display: flex;
     justify-content: space-between;

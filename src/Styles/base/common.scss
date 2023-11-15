@@ -30,10 +30,26 @@ body {
         padding: 20px;
     }
 
-    .personal .time-toggle {
-        display: flex;
-        justify-content: space-between;
-        padding: 25px 30px !important;
+    .personal {
+
+        .person {
+            display: flex;
+            gap: 20px;
+
+            img, h1 {
+                margin: 0 !important;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
+        .time-toggle {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 30px !important;
+        }
     }
 
     .cards {
