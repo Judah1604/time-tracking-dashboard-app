@@ -12,7 +12,7 @@ function Card({ period, timeframes }) {
                 viewport={{ once: true }}
             >
                 <img
-                    src={"/images/icon-" + optimizedTitle + ".svg"}
+                    src={"/assets/images/icon-" + optimizedTitle + ".svg"}
                     alt={period.title}
                 />
             </motion.div>
