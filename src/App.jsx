@@ -8,7 +8,7 @@ function App() {
     return (
         <>
             <Personal timeframes={timeframes} setTimeframes={setTimeframes} />
-            <Cards timeframes={timeframes} />
+            <Cards timeframes={timeframes} /> 
         </>
     );
 }

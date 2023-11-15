@@ -27,7 +27,13 @@ body {
         grid-template-columns: 1fr;
         width: 80%;
         height: unset;
-        margin: 20px;
+        padding: 20px;
+    }
+
+    .personal .time-toggle {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 30px !important;
     }
 
     .cards {

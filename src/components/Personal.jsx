@@ -4,7 +4,7 @@ function Personal({ timeframes, setTimeframes }) {
     return (
         <div className="personal">
             <div className="person">
-                <img src="/images/favicon-32x32.png" alt="Jeremy Robson" />
+                <img src="/images/image-jeremy.png" alt="Jeremy Robson" />
                 <p>Report for</p>
                 <h1>Jeremy Robson</h1>
             </div>
