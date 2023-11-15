@@ -12,14 +12,14 @@ function Card({ period, timeframes }) {
                 viewport={{ once: true }}
             >
                 <img
-                    src={"/assets/images/icon-" + optimizedTitle + ".svg"}
+                    src={"images/icon-" + optimizedTitle + ".svg"}
                     alt={period.title}
                 />
             </motion.div>
             <div className="details">
                 <div className="name">
                     <p>{period.title}</p>
-                    <img src="/images/icon-ellipsis.svg" alt="Ellipsis" />
+                    <img src="images/icon-ellipsis.svg" alt="Ellipsis" />
                 </div>
                 {timeframes === "daily" ? (
                     <>
