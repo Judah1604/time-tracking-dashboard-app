@@ -5,7 +5,7 @@ import Card from "./Card";
 function Cards({ timeframes }) {
     const [data, setData] = useState([]);
 
-    fetch("/assets/data.json")
+    fetch("data.json")
         .then((res) => res.json())
         .then((data) => setData(data));
 
